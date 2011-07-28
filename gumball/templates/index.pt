@@ -1,0 +1,6 @@
+<div metal:use-macro="layout.macros['site']">
+    <div metal:fill-slot="content">
+        <h1>From index.pt</h1>
+        <p>This is some content.</p>
+    </div>
+</div>
