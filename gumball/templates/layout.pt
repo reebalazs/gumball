@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      metal:define-macro="site">
+<head>
+    <title>${project} Application</title>
+    <link rel="stylesheet" href="${url.app_static}960.css"/>
+    <link rel="stylesheet" href="${url.app_static}main.css"/>
+    <script src="${url.jslibs_static}jquery-1.6.2.min.js"></script>
+</head>
+<body>
+<div class="container_12">
+    <div class="grid_6">
+        <h2>Welcome to ${project}</h2>
+        <p>V: ${url.gonzo}</p>
+    </div>
+</div>
+<div class="container_12">
+    <div class="grid_2" metal:define-slot="content">
+    </div>
+</div>
+</body>
+</html>
