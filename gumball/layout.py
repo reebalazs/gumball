@@ -1,15 +1,29 @@
 from pyramid.decorator import reify
+from pyramid.renderers import get_renderer
+from pyramid.url import resource_url
 from pyramid.url import static_url
 
-class API(object):
-    """ All 'API' objects are used by renderer_globals_factory """
+class LayoutManager(object):
+
+    layout_template = "gumball:/templates/site_layout.pt"
+    snippets_template = "gumball:/templates/snippets.pt"
+
     def __init__(self, context, request):
         self.context = context
         self.request = request
 
-class URLAPI(API):
+    @reify
+    def site_layout(self):
+        renderer = get_renderer(self.layout_template)
+        macros = renderer.implementation().macros['site']
+        return macros
 
-    gonzo = "91232"
+    @reify
+    def snippets(self):
+        renderer = get_renderer(self.snippets_template)
+        macros = renderer.implementation().macros
+        return macros
+
     @reify
     def context_url(self):
         return resource_url(self.context, self.request)
@@ -19,20 +33,22 @@ class URLAPI(API):
         return self.request.application_url
 
     @reify
-    def app_static(self):
-        # TODO need a way to get 'gumball' via a call
+    def gumball_static(self):
         return static_url('gumball:static/', self.request)
-
-    @reify
-    def deform_static(self):
-        return static_url('deform:static/', self.request)
 
     @reify
     def jslibs_static(self):
         return static_url('jslibs:static/', self.request)
 
-def default_globals_factory(system):
-    request, context = system['request'], system['context']
-    return {
-        'url':URLAPI(context, request),
-        }
+    @reify
+    def deform_static(self):
+        return static_url('deform:static/', self.request)
+
+def inject_static(config):
+    # TODO sure would be nice if I could make a Configurator instance
+    # and do this myself
+
+    config.add_static_view('static', 'gumball:static/',
+                           cache_max_age=86400)
+    config.add_static_view('static-jslibs', 'jslibs:/',
+                           cache_max_age=86400)

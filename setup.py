@@ -11,10 +11,12 @@ except IOError:
     README = CHANGES = ''
 
 install_requires = [
-    #'pyramid',
+    'pyramid',
+    'sphinx',
     ]
 
 test_requires = [
+    'WebTest',
     #'nose',
     #'coverage',
     ]
