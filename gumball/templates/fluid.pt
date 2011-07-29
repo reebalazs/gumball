@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head><title>3 Column Fluid Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+* { 
+	padding: 0; 
+	margin: 0;
+}
+body {
+	font-size: 13px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-color: #FFF;
+}
+
+
+#header {
+    font-size:140%;
+}
+
+.inline-list li {
+    list-style:none;
+    display:inline;
+}
+
+.inline-list ul {
+    padding:0px;
+    margin:0;
+}
+
+h1 {
+	font-size: 1.6em;	
+}
+h2 {
+	font-size: 1.4em;	
+}
+a, a:link {	
+	color: #000;
+}
+a:hover {
+	color: #000;
+}
+#content p {
+	margin-bottom: 10px;	
+}
+#container {
+	font-size: 0.8em;
+	margin: 0 auto;
+	overflow: hidden;
+	min-width: 960px;
+	max-width: 1500px;
+}
+
+#global-nav {
+    background:#cfe2fc;
+    padding: 0 10px;
+    font-size:100%;
+    height: 38px;
+}
+
+
+#local {
+    background-color: #DBEBD4;
+    font-size: 100%;
+    height: 78px;
+    margin-top: -10px;
+    padding: 10px;
+    
+}
+
+#local-nav li {
+    margin-right:6px;
+    padding: 13px 10px;
+}
+
+.local-nav-link {
+    padding-bottom:10px;
+}
+
+#local-nav .selected {
+    background:#ffffff;
+}
+
+#right-column {
+	float: right;
+	width: 200px;
+	padding: 10px;	
+	background: none repeat scroll 0 0 #cfe2fc;
+	min-height:400px;
+}
+#content {
+    font-size: 110%;
+    line-height: 200%;
+    margin-right: 220px;
+    min-height: 380px;
+    padding: 20px;
+}
+#footer {
+	background-color: #669966;
+	padding: 10px;
+	border: 1px solid #000;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#global-nav li .local-nav-link {
+    padding: 10px;
+}
+
+
+#global-sections .selected .local-nav-link {
+    background-color:#abccf9;
+}
+
+#section-title {
+    padding:10px;
+    font-size:160%;
+}
+
+#members-local-nav {
+    margin-left: 20px;
+    margin-top: 55px;
+    padding: 5px;
+}
+
+#members-local-nav li {
+    padding:5px;
+}
+
+#main-section {
+    background:#fff;
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-top: -24px;
+}
+
+
+#members-info {
+    padding:10px;
+}
+
+#search {
+    margin-top:14px;
+}
+
+.float-right {
+    float:right;
+}
+
+.float-left {
+    float:left;
+}
+
+.clear {
+    clear:both;
+}
+
+.clear-left {
+    clear:left;
+}
+
+.float-inline li {
+    float:left;
+}
+
+#product-functions {
+    height:20px;
+    margin-top: 10px;
+}
+
+.selected .tail {
+    background: url("/static/fluid_background_tail_black.png") no-repeat
+    scroll center;
+    height:10px;
+}
+
+.creator {
+    font-style:italic;
+    font-size:90%;
+}
+
+#wiki-widget b {
+    border-radius:8px;
+    border-color:#CCC;
+    background:#CCC;
+    font-weight:normal;
+    padding:3px;
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="wrapper">
+		<div id="header">
+            <div id="global-nav">
+			    <div id="global-sections" class="inline-list float-inline float-left">
+			        <ul>
+			            <li>
+			                <div class="local-nav-link"><a href="#">KARL</a></div>
+			                <div class="tail"></div>
+			            </li>
+			            <li>
+			                <div class="local-nav-link"><a href="#">Intranet</a></div>
+			                <div class="tail"></div>
+			            </li>
+			            <li class="selected">
+			                <div class="local-nav-link"><a href="#">Communities</a></div>
+			                <div class="tail"></div>
+			            </li>
+			            <li>
+			                <div class="local-nav-link"><a href="#">People</a></div>
+			                <div class="tail"></div>
+			            </li>
+			            <li>
+			                <div class="local-nav-link"><a href="#">Calendar</a></div>
+			                <div class="tail"></div>
+			            </li>
+			            <li>
+			                <div class="local-nav-link"><a href="#">Explore</a></div>
+			                <div class="tail"></div>
+			            </li>
+			        </ul>
+			    </div>
+			    <div id="members-info" class="inline-list float-right">
+			        <ul>
+			            <li><a href="#">My Profile</a></li>
+			            <li><a href="#">Logout</a></li>
+			            <li><a href="#">Help</a></li>
+			        </ul>
+			    </div>
+			
+			</div>
+			
+		<div class="clear"></div>
+		<div id="local">
+            <div id="local-nav" class="inline-list float-inline float-left">
+                <div id="section-title">
+                    Justice
+                </div>
+                <div class="clear"></div>
+                <ul>
+                    <li>
+                        <div class="local-nav-link"><a href="#">Overview</a></div>
+                        <div class="tail"></div>
+                    </li>
+                    <li>
+                        <div class="local-nav-link"><a href="#">Blog</a></div>
+                        <div class="tail"></div>
+                    </li>
+                    <li class="selected">
+                        <div class="local-nav-link"><a href="#">Wiki</a></div>
+                        <div class="tail"></div>
+                    </li>
+                    <li>
+                        <div class="local-nav-link"><a href="#">Calendar</a></div>
+                        <div class="tail"></div>
+                    </li>
+                    <li>
+                        <div class="local-nav-link"><a href="#">Files</a></div>
+                        <div class="tail"></div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div id="members-local-nav" class="inline-list float-left">
+                <ul>
+                    <li>
+                        <a href="#">Members</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore</a>
+                    </li>
+                </ul>
+            </div>
+        
+
+
+            <div id="search" class="float-right">
+                <form>
+                    <div id="site-search-options">
+                        <input type="radio" name="search_options" value="All" /> All Karl
+                        <input type="radio" name="search_options" value="this_section" /> Only in this Community
+                    </div>
+                
+                    <div id="search-widget">
+                        <select class="float-left">
+                            <option value="volvo">All Content</option>
+                            <option value="saab">This Section</option>
+                        </select>
+                    
+                        <div id="site-search" class="float-left">
+                            <input id="search-site-box" class="float-left" type="text" name="SearchTextBox" title="Search this site" accesskey="4" size="15" />
+                            <input class="search-site-button float-left" type="submit" value="Search" name="SearchTextBoxButton" />
+                        </div>
+                </div>
+                  
+            </form>
+        </div>
+    </div>
+    
+    </div>
+
+	<div class="clear"></div>
+    <div id="main-section">
+	<div id="right-column">
+	
+	</div>
+    
+	<div id="content">
+	    <div id="product-functions">
+	        <div class="float-left inline-list">
+	            <ul>
+	                <li><a href="#">Front Page</a></li> |
+	                <li><a href="#">Index</a></li> |
+	                <li><a href="#">Contents</a></li> |
+	                <li><a href="#">Feed</a></li> |
+	            </ul>
+	         </div>
+	         <div class="float-right inline-list">
+	             <ul>
+ 	                <li><a href="#">Page</a></li>
+ 	                <li><a href="#">Edit</a></li>
+ 	                <li><a href="#">Delete</a></li>
+ 	            </ul>
+	         </div>
+	    </div>
+	    <div class="clear-left"></div>
+		<h2>A Very Important Page</h2>
+		<span class="creator">by Paul Everitt, 3 days ago</span>
+		<div id='wiki-widget' >
+		    Tags: <b class="tag">sometag</b>  <input id="search-site-box"  type="text" name="SearchTextBox" title="Search this site" accesskey="4" size="15" />
+                <input type="submit" value="Search" name="SearchTextBoxButton" />
+		</div>
+	</div>
+	</div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
