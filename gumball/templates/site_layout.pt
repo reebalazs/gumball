@@ -6,6 +6,12 @@
       metal:define-macro="site">
 <head>
     <title>${project} Application</title>
+    <script type="text/javascript"
+        src="${layout.jslibs_static}resources/jquery-1.6.2-jquery-ui-1.9m5.min.js"></script>
+   <script type="text/javascript"
+        src="${layout.gumball_static}gumball.js"></script>
+    <link type="text/css" rel="stylesheet"
+        href="${layout.jslibs_static}resources/jquery-ui-1.9m5-smoothness.min.css"></link>
     <link rel="stylesheet" href="${layout.gumball_static}main.css"/>
 </head>
 <body>
@@ -99,10 +105,14 @@
                      class="inline-list float-left">
                     <ul>
                         <li>
-                            <a href="#">Members</a>
+                            <div class="members-local-nav-link">
+                                <a href="#">Members</a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">Explore</a>
+                            <div class="members-local-nav-link">
+                                <a href="#">Explore</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -180,6 +190,44 @@
     </div>
 
 
+</div>
+
+<!-- wire up page
+  -- Only wiring! Every functional code
+  -- shall be moved to its own widget. -->
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(function() {
+
+        // quickpanel activation
+        $('#local-nav > ul > li, #members-local-nav > ul > li').quickpanel({
+        });
+
+    });
+    //]]>
+</script>
+
+<!-- Quickpanels -->
+<div id="quickpanel-overview" class="quickpanel">
+    Lorem ipsum
+</div>
+<div id="quickpanel-blog" class="quickpanel">
+    Lorem ipsum
+</div>
+<div id="quickpanel-wiki" class="quickpanel">
+    Lorem ipsum
+</div>
+<div id="quickpanel-calendar" class="quickpanel">
+    Lorem ipsum
+</div>
+<div id="quickpanel-files" class="quickpanel">
+    Lorem ipsum
+</div>
+<div id="quickpanel-members" class="quickpanel">
+    Lorem ipsum
+</div>
+<div id="quickpanel-explore" class="quickpanel">
+    Lorem ipsum
 </div>
 
 </body>

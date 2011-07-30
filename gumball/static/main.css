@@ -120,6 +120,12 @@ a:hover {
 
 #members-local-nav li {
     padding:5px;
+    margin-right:6px;
+}
+
+.members-local-nav-link {
+    padding-bottom: 11px;
+    display: inline-block;
 }
 
 #main-section {
@@ -163,7 +169,7 @@ a:hover {
 }
 
 .selected .tail {
-    background: url("/static/fluid_background_tail_black.png") no-repeat
+    background: url("fluid_background_tail_black.png") no-repeat
     scroll center;
     height:10px;
 }
@@ -180,3 +186,31 @@ a:hover {
     font-weight:normal;
     padding:3px;
 }
+
+/* quickpanels */
+
+.quickpanel {
+    display: none;
+}
+
+.quickpanel-dialog .ui-dialog-titlebar {
+    background: white;
+    border: 0;
+}
+
+.north-tail {
+    background: url("fluid_background_tail_north_black.png") no-repeat
+    scroll center;
+    height:10px;
+    width: 14px;
+}
+
+.south-tail {
+    background: url("fluid_background_tail_black.png") no-repeat
+    scroll center;
+    height:10px;
+    width: 14px;
+}
+
+
+

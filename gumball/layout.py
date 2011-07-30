@@ -38,7 +38,7 @@ class LayoutManager(object):
 
     @reify
     def jslibs_static(self):
-        return static_url('jslibs:static/', self.request)
+        return static_url('jslibs:/', self.request)
 
     @reify
     def deform_static(self):
