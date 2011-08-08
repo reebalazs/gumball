@@ -3,18 +3,15 @@
 	margin: 0;
 }
 body {
-	font-size: 1em;
+	font-size: 13px;
 	font-family: arial, verdana, helvetica, sans-serif;
 	background-color: #FFF;
 }
 
-#gb-bodycontainer {
-	margin: 0 auto;
-	overflow: hidden;
-	min-width: 960px;
-	max-width: 1500px;
-}
 
+#header {
+    font-size:140%;
+}
 
 .inline-list li {
     list-style:none;
@@ -40,6 +37,13 @@ a:hover {
 }
 #content p {
 	margin-bottom: 10px;	
+}
+#container {
+	font-size: 0.8em;
+	margin: 0 auto;
+	overflow: hidden;
+	min-width: 960px;
+	max-width: 1500px;
 }
 
 #global-nav {
