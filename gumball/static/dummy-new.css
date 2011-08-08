@@ -8,10 +8,14 @@ body {
 	background-color: #FFF;
 }
 
-
-#header {
-    font-size:140%;
+#gb-bodycontainer {
+	font-size: 0.85em;
+	margin: 0 auto;
+	overflow: hidden;
+	min-width: 960px;
+	max-width: 1500px;
 }
+
 
 .inline-list li {
     list-style:none;
@@ -37,13 +41,6 @@ a:hover {
 }
 #content p {
 	margin-bottom: 10px;	
-}
-#container {
-	font-size: 0.8em;
-	margin: 0 auto;
-	overflow: hidden;
-	min-width: 960px;
-	max-width: 1500px;
 }
 
 #global-nav {
