@@ -17,7 +17,7 @@
                             style="padding-right: 4px;
                                     vertical-align: top;"
                             src="/static/logo.png"
-                            height="18" width="22"/><a
+                            height="18" width="22" alt="KARL Logo"/><a
                             href="#">KARL</a></div>
                     <div class="tail"></div>
                 </li>
@@ -114,13 +114,16 @@
 
 
         <div id="search" class="float-right">
-            <form>
+            <form action=".">
                 <div id="site-search-options">
-                    <input type="radio" name="search_options"
-                           value="All"/> All Karl
-                    <input type="radio" name="search_options"
-                           value="this_section"/> Only in this
-                    Community
+                    <input type="radio" id="search_options_all"
+                           value="All"/>
+                    <label
+                            for="search_options_all">All Karl</label>
+                    <input type="radio" id="search_options_here"
+                           value="this_section"/> <label
+                        for="search_options_here">Only in this
+                    Community</label>
                 </div>
 
                 <div id="search-widget">
@@ -180,8 +183,9 @@
                 <span class="creator">by Paul Everitt, 3 days ago</span>
 
                 <div id='wiki-widget'>
-                    Tags: <b class="tag">sometag</b> <input
-                        id="search-site-box"
+                    <label for="tags-site-box">Tags: <strong
+                            class="tag">sometag</strong></label> <input
+                        id="tags-site-box"
                         type="text"
                         name="SearchTextBox"
                         title="Search this site"
