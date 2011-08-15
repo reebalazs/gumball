@@ -23,7 +23,12 @@
                      class="inline-list float-inline float-left">
                     <ul>
                         <li>
-                            <div class="local-nav-link"><a
+
+                            <div class="local-nav-link"><img
+                                    style="padding-right: 4px;
+                                    vertical-align: top;"
+                                    src="${layout.gumball_static}logo.png"
+                                    height="18" width="22"/><a
                                     href="#">KARL</a></div>
                             <div class="tail"></div>
                         </li>

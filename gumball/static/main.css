@@ -53,6 +53,11 @@ a:hover {
     height: 38px;
 }
 
+#global-nav li .local-nav-link {
+    padding: 10px;
+}
+
+
 
 #local {
     background-color: #DBEBD4;
@@ -80,7 +85,7 @@ a:hover {
 	float: right;
 	width: 200px;
 	padding: 10px;	
-	background: none repeat scroll 0 0 #cfe2fc;
+	background: none repeat scroll 0 0 #ededed;
 	min-height:400px;
 }
 #content {
@@ -98,10 +103,19 @@ a:hover {
 	text-align: center;
 }
 
-#global-nav li .local-nav-link {
-    padding: 10px;
+#global-sections .local-nav-link {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
 }
 
+.local-nav-link a {
+    color: gray;
+}
+
+.selected a {
+    color: black;
+    font-weight: bold;
+}
 
 #global-sections .selected .local-nav-link {
     background-color:#abccf9;
@@ -172,6 +186,7 @@ a:hover {
     background: url("fluid_background_tail_black.png") no-repeat
     scroll center;
     height:10px;
+    margin-top: -1px;
 }
 
 .creator {
