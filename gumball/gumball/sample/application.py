@@ -5,7 +5,7 @@ from gumball.layout import inject_static
 
 def main():
     config = Configurator()
-    config.scan("bottlecap.sample")
+    config.scan("gumball.sample")
     config.include(inject_static)
     app = config.make_wsgi_app()
     return app
