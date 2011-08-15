@@ -9,10 +9,10 @@
     <script type="text/javascript"
             src="${layout.jslibs_static}resources/jquery-1.6.2-jquery-ui-1.9m5.min.js"></script>
     <script type="text/javascript"
-            src="${layout.gumball_static}gumball.js"></script>
+            src="${layout.gumball_static}site_layout.js"></script>
     <link type="text/css" rel="stylesheet"
           href="${layout.jslibs_static}resources/jquery-ui-1.9m5-smoothness.min.css"></link>
-    <link rel="stylesheet" href="${layout.gumball_static}main.css"/>
+    <link rel="stylesheet" href="${layout.gumball_static}site_layout.css"/>
 </head>
 <body>
 <div metal:define-slot="content">

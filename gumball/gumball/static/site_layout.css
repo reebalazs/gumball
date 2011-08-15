@@ -1,27 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    font-size: 0.8em;
-    font-family: arial, verdana, helvetica, sans-serif;
-    background-color: #FFF;
+	font-size: 0.85em;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-color: #FFF;
 }
-
-#gb-siteframe {
-    background:#cfe2fc;
-    padding: 0 0.5em;
-    height: 3em;
-}
-
-
-/*  Utility styles */
-.gb-clear {
-    clear:both;
-}
-
-.gb-clear-left {
-    clear:left;
-}
-
