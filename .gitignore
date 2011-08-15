@@ -1,3 +1,5 @@
+.Python
+.DS_Store
 *.egg
 *.egg-info
 *.pyc
