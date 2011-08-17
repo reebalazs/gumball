@@ -2,6 +2,9 @@
 Questions
 =========
 
+- The balance between the upside of setting some conventions and the
+  downside of foisting yet another abstraction
+
 - Making users of Gumball do the BeforeRender subscriber to add the
   renderer globals is a bit of a drag
 
@@ -10,3 +13,6 @@ Questions
    all of that and get it right. Should be the package's responibility.
 
 - em or px?
+
+- Should better looking Deform widgets go in Deform or here?
+

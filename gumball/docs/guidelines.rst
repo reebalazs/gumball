@@ -10,3 +10,8 @@ Laundry list of best practices, styles, decisions, whatever.
 
 - Eliminate the main_template.macros['main'] madness
 
+- Handle the precedence of what is loaded, when
+
+- Decide on whether jslib stuff is loaded just before closing body
+
+- Emphasize far-future expires with versioned URLs on static stuff
