@@ -7,6 +7,15 @@ class FunctionalTests(unittest.TestCase):
         from webtest import TestApp
         self.testapp = TestApp(app)
 
-    def test_root(self):
+    def test_site_layout(self):
         res = self.testapp.get('/', status=200)
-        self.failUnless('tracer' in res.body)
+        self.failUnless('site_layout' in res.body)
+
+    def test_index(self):
+        res = self.testapp.get('/', status=200)
+        self.failUnless('testable' in res.body)
+
+    def test_static_jslibs(self):
+        url = '/static-jslibs/jquery-1.6.2-jquery-ui-1.9m5.min.js'
+        res = self.testapp.get(url, status=200)
+        self.failUnless('sizzle' in res.body)

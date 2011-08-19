@@ -7,15 +7,14 @@
 <head>
     <title>${project} Application</title>
     <script type="text/javascript"
-        src="${layout.jslibs_static}resources/jquery-1.6.2-jquery-ui-1.9m5.min.js"></script>
+        src="${layout.jslibs_static}/jquery-1.6.2-jquery-ui-1.9m5.min.js"></script>
    <script type="text/javascript"
-        src="${layout.gumball_static}gumball.js"></script>
+        src="${app.app_static}bottlecap.js"></script>
     <link type="text/css" rel="stylesheet"
-        href="${layout.jslibs_static}resources/jquery-ui-1.9m5-smoothness.min.css"></link>
-    <link rel="stylesheet" href="${layout.gumball_static}main.css"/>
+        href="${layout.jslibs_static}/jquery-ui-1.9m5-smoothness.min.css"></link>
+    <link rel="stylesheet" href="${app.app_static}main.css"/>
 </head>
-<body>
-<div id="container">
+<body id="container">
     <div id="wrapper">
         <div id="header">
             <div id="global-nav">
@@ -27,7 +26,7 @@
                             <div class="local-nav-link"><img
                                     style="padding-right: 4px;
                                     vertical-align: top;"
-                                    src="${layout.gumball_static}logo.png"
+                                    src="${app.app_static}logo.png"
                                     height="18" width="22"/><a
                                     href="#">KARL</a></div>
                             <div class="tail"></div>
@@ -195,7 +194,6 @@
     </div>
 
 
-</div>
 
 <!-- wire up page
   -- Only wiring! Every functional code

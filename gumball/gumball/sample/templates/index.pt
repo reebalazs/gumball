@@ -2,6 +2,6 @@
     <div metal:fill-slot="content">
         <h2>An Example Page</h2>
 
-        <p>Some content.</p>
+        <p>Some testable content.</p>
     </div>
 </div>

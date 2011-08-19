@@ -7,16 +7,17 @@
 <head>
     <title>${project} Application</title>
     <script type="text/javascript"
-            src="${layout.jslibs_static}resources/jquery-1.6.2-jquery-ui-1.9m5.min.js"></script>
+            src="${layout.jslibs_static}jquery-1.6.2-jquery-ui-1.9m5.min.js"></script>
     <script type="text/javascript"
             src="${layout.gumball_static}site_layout.js"></script>
     <link type="text/css" rel="stylesheet"
-          href="${layout.jslibs_static}resources/jquery-ui-1.9m5-smoothness.min.css"></link>
+          href="${layout.jslibs_static}jquery-ui-1.9m5-smoothness.min.css"></link>
     <link rel="stylesheet" href="${layout.gumball_static}site_layout.css"/>
 </head>
 <body>
 <div metal:define-slot="content">
 </div>
+<p><em>Added from site_layout</em>.</p>
 
 </body>
 </html>

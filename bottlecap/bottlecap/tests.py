@@ -2,7 +2,7 @@ import unittest
 
 class FunctionalTests(unittest.TestCase):
     def setUp(self):
-        from bottlecap.sample.application import main
+        from bottlecap.application import main
         app = main()
         from webtest import TestApp
         self.testapp = TestApp(app)

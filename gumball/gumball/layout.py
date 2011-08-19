@@ -38,7 +38,7 @@ class LayoutManager(object):
 
     @reify
     def jslibs_static(self):
-        return static_url('jslibs:/', self.request)
+        return static_url('jslibs:resources/', self.request)
 
     @reify
     def deform_static(self):
@@ -48,7 +48,7 @@ def inject_static(config):
     # TODO sure would be nice if I could make a Configurator instance
     # and do this myself
 
-    config.add_static_view('static', 'gumball:static/',
+    config.add_static_view('static-jslibs', 'jslibs:resources/',
                            cache_max_age=86400)
-    config.add_static_view('static-jslibs', 'jslibs:/',
+    config.add_static_view('static', 'gumball:static/',
                            cache_max_age=86400)
